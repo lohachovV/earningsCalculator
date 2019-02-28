@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.MainController">
+   <children>
+      <TabPane prefHeight="540.0" prefWidth="670.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="addOrderTab" closable="false" text="Add order">
+                <fx:include source="NewOrderWindow.fxml" />
+            </Tab>
+          <Tab fx:id="addNewCarTab" closable="false" text="Сars">
+              <fx:include source="CarsWindow.fxml" />
+          </Tab>
+            <Tab fx:id="servicesTab" closable="false" text="Services">
+                <fx:include source="ServicesWindow.fxml" />
+            </Tab>
+            <Tab fx:id="servicesAndTariffsModify" closable="false" text="Modify Services and Tariffs">
+                <fx:include source="ServicesAndTariffsWindow.fxml" />
+            </Tab>
+
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
